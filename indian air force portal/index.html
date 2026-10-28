@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Air Force Recruitment Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <h2>✈ AIR FORCE PORTAL</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#recruitment">Recruitment</a>
+            <a href="#eligibility">Eligibility</a>
+            <a href="#register">Register</a>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero">
+        <div>
+            <h1>TOUCH THE SKY WITH GLORY</h1>
+
+            <p>
+                Explore opportunities, discover your potential,
+                and take the first step towards your dream.
+            </p>
+
+            <a href="#register" class="btn">Register Now</a>
+            <a href="#eligibility" class="btn">Check Eligibility</a>
+        </div>
+
+        <div class="aircraft">✈</div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About Indian Air Force</h2>
+
+        <p>
+            The Indian Air Force is an important part of
+            the Indian Armed Forces. It protects Indian
+            airspace and contributes to national defence.
+        </p>
+
+        <p>
+            This website is an educational mini project
+            developed using HTML, CSS, and JavaScript.
+        </p>
+    </section>
+
+    <!-- RECRUITMENT SECTION -->
+    <section id="recruitment">
+        <h2>Recruitment Opportunities</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🎖 NDA Entry</h3>
+                <p>
+                    Explore officer-entry opportunities
+                    after Class 12.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>✈ AFCAT Entry</h3>
+                <p>
+                    Explore commissioned officer
+                    opportunities after graduation.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🛩 Agniveervayu</h3>
+                <p>
+                    Learn about recruitment under
+                    the Agnipath scheme.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ELIGIBILITY SECTION -->
+    <section id="eligibility">
+        <h2>Eligibility Checker</h2>
+
+        <div class="form-box">
+
+            <label for="age">Enter Your Age</label>
+            <input type="number" id="age"
+                   placeholder="Enter age">
+
+            <label for="entry">Select Entry</label>
+            <select id="entry">
+                <option value="">Select Entry</option>
+                <option value="NDA">NDA</option>
+                <option value="AFCAT">AFCAT</option>
+                <option value="Agniveervayu">Agniveervayu</option>
+            </select>
+
+            <button onclick="checkEligibility()">
+                Check Eligibility
+            </button>
+
+            <p id="result"></p>
+
+            <small>
+                Note: This checker uses simplified example
+                age ranges. Official eligibility depends on
+                the latest recruitment notification.
+            </small>
+        </div>
+    </section>
+
+    <!-- REGISTRATION SECTION -->
+    <section id="register">
+        <h2>Candidate Registration</h2>
+
+        <div class="form-box">
+
+            <form onsubmit="registerCandidate(event)">
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name"
+                       placeholder="Enter your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email"
+                       placeholder="Enter email" required>
+
+                <label for="phone">Mobile Number</label>
+                <input type="tel" id="phone"
+                       placeholder="Enter mobile number" required>
+
+                <label for="qualification">Qualification</label>
+                <select id="qualification" required>
+                    <option value="">Select Qualification</option>
+                    <option>12th PCM</option>
+                    <option>Graduation</option>
+                    <option>Engineering</option>
+                    <option>Post Graduation</option>
+                </select>
+
+                <button type="submit">
+                    Submit Registration
+                </button>
+
+            </form>
+
+            <p id="registrationResult"></p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>✈ INDIAN AIR FORCE CAREER PORTAL</h3>
+        <p>Developed for MCA Web Programming Mini Project</p>
+        <p>Educational demonstration — Not an official website</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
